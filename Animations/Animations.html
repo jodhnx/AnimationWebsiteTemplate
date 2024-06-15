@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animierte Webseite</title>
+    <link rel="stylesheet" href="Animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="services.html">Dienstleistungen</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Parallax Section -->
+            <section class="parallax"></section>
+
+            <section>
+                <h1>Willkommen zu unserer Webseite</h1>
+                <p>Dies ist eine Beispielseite mit animierter Navigation und Hover-Effekten.</p>
+
+                <!-- Slideshow -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="https://via.placeholder.com/800x400?text=Slide+1" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://via.placeholder.com/800x400?text=Slide+2" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://via.placeholder.com/800x400?text=Slide+3" style="width:100%">
+                    </div>
+                   
+                </div>
+
+                <!-- Modal Buttons -->
+                <button id="modalBtn1">Öffne Modal 1</button>
+                <button id="modalBtn2">Öffne Modal 2</button>
+                <button id="modalBtn2">Öffne Modal 3</button>
+                <!-- Modale Fenster -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-modal="modal1">&times;</span>
+                        <p>Dies ist Modal 1.</p>
+                    </div>
+                </div>
+
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-modal="modal2">&times;</span>
+                        <p>Dies ist Modal 2.</p>
+                    </div>
+                </div>
+
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-modal="modal2">&times;</span>
+                        <p>Dies ist Modal 3.</p>
+                    </div>
+                </div>
+                <!-- Tooltips -->
+                <p>
+                    Dies ist ein Text mit einem <span class="tooltip">Tooltip<span class="tooltiptext">Tooltip-Text</span></span>.
+                </p>
+
+                <div class="cards">
+                    <div class="card">
+                        <h2>Card 1</h2>
+                        <p>Dies ist eine Beispielkarte.</p>
+                    </div>
+                    <div class="card">
+                        <h2>Card 2</h2>
+                        <p>Dies ist eine Beispielkarte.</p>
+                    </div>
+                    <div class="card">
+                        <h2>Card 3</h2>
+                        <p>Dies ist eine Beispielkarte.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <main>
+        <section>
+            <h1>Kontaktieren Sie uns</h1>
+            <form id="contact-form" method="post" action="#">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Nachricht:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Senden</button>
+            </form>
+        </section>
+    </main>
+
+     <main>
+            <section>
+                <h1>Unsere Dienstleistungen</h1>
+                <div id="services-container"></div>
+            </section>
+            <section>
+                <h1>Letzte Blog-Beiträge</h1>
+                <div id="blog-container"></div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Meine Webseite</p>
+            <ul>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">AGB</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="Animations.js"></script>
+</body>
+</html>
